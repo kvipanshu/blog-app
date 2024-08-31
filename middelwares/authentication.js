@@ -11,7 +11,6 @@ function checkForAuthenticationCookie(cookieName) {
 			const userPayload = validateToken(tokenCookieValue);
 			req.user = userPayload;
 		} catch (error) {}
-
 		return next();
 	};
 }
